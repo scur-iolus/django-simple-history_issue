@@ -94,7 +94,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="bars",
-                        related_query_name="bar",  # FIXME: and here!
+                        related_query_name="bar",  # FIXME: and here! In some cases, the initial reverse relation takes a back seat to the historical one
                         to="app1.foo",
                     ),
                 ),
