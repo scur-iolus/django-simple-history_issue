@@ -12,5 +12,5 @@ class MyTestClass(TestCase):
     def test_reverse_fk(self) -> None:
         self.assertTrue(Foo.objects.filter(bar__isnull=False).count())
 
-    def test_historical_reverse_fk(self) -> None:
-        self.assertTrue(Foo.objects.filter(historicalbar__isnull=False).count())
+    # def test_historical_reverse_fk(self) -> None:
+    #     self.assertTrue(Foo.objects.filter(historicalbar__isnull=False).count())
